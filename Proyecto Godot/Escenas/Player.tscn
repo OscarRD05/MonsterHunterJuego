@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bj1ute7yqa4um"]
+
+[ext_resource type="Script" uid="uid://dci061nn2eawq" path="res://Scripts/player.gd" id="1_kpjcp"]
+[ext_resource type="PackedScene" uid="uid://doptfx48cleob" path="res://glb (Modelos)/RobotGodot/3DGodotRobot.glb" id="1_xhfnw"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_kpjcp"]
+height = 1.854126
+
+[node name="CharacterBody3D" type="CharacterBody3D" unique_id=2032232352]
+script = ExtResource("1_kpjcp")
+
+[node name="Robot" parent="." unique_id=2023253712 instance=ExtResource("1_xhfnw")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=509382634]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8878784, 0)
+shape = SubResource("CapsuleShape3D_kpjcp")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=883772279]
+transform = Transform3D(-0.9982222, 7.437335e-09, -0.059602585, -0.03998694, 0.74155444, 0.6697, 0.044198565, 0.6708928, -0.74023604, -0.106963865, 3.9124966, -2.840154)
