@@ -1,5 +1,0 @@
-[gd_scene format=3 uid="uid://2iymjtskoj77"]
-
-[ext_resource type="PackedScene" uid="uid://0wcyiauwe1i8" path="res://glb (Modelos)/Tenerife/Tenerife.glb" id="1_dc2g3"]
-
-[node name="Tenerife" unique_id=1858921920 instance=ExtResource("1_dc2g3")]
